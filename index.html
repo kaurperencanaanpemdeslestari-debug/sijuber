@@ -1017,6 +1017,11 @@ td,th{word-break:break-word;white-space:normal}
 // ═══════════════════════════════════════════════
 //  CONSTANTS
 // ═══════════════════════════════════════════════
+  fetch('database.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
 const STORE_KEY='sijuber_v4',THEME_KEY='sijuber_theme',SIDEBAR_KEY='sijuber_sidebar';
 const BIDANG_DEFAULT=[
   {id:1,nama:"Penyelenggaraan Pemerintahan Desa"},
